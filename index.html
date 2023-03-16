@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <title>Henry Lundberg Navntoft</title>
 </head>
 
@@ -22,6 +21,9 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#resume">Resume</a></li>
+                <div class="toggle-container">
+                    <input type="checkbox" id="switch"><label for="switch">Toggle</label>
+                </div>
             </ul>
         </nav>
     </header>
@@ -33,7 +35,7 @@
                 <h3>Designer & Developer</h3>
             </div>
             <div>
-                <p>Born in 2000 in <span>Copenhagen, Denmark</span>.
+                <p>Born in 2000 in <span>Copenhagen, Denmark.</span>
                     <br>
                     <br>
                     I am a firm believer that web design should be <span>simple </span>, easy to understand, and
@@ -55,26 +57,37 @@
         <section id="projects">
             <h2>Projects</h2>
             <div>
-                <h3>North Folk</h3>
-                <p>North Folk is a responsive website that showcases a folk music band. As the main developer on this
-                    project, I coded the site using HTML, CSS, and JavaScript, working closely with the design team to
-                    ensure that the site accurately reflected the band's style and sound. I implemented various
-                    interactive features, such as a responsive navigation menu, a music player, and a contact form.
+                <h3>Beerwalks Copenahgen</h3>
+                <p>One of my projects was the Beerwalks Copenhagen website. Using semantic HTML and CSS, I created an
+                    engaging and accessible experience for visitors. I also implemented JavaScript to enhance the
+                    website's interactivity and functionality. The design effectively promotes Beerwalks Copenhagen as a
+                    unique experience for beer enthusiasts.
                 </p>
+                <a href="">See the Project</a>
             </div>
             <div>
                 <h3>Copenhagen Cartel</h3>
-                <p>The landing page I created is designed to engage a younger audience by showcasing a fun and
-                    interactive brand that resonates with their interests and values. Using HTML, CSS, and JavaScript, I
-                    crafted a visually appealing and dynamic website that captures the attention of the target audience.
+                <p>Another project I created was a landing page for Copenhagen Cartel. We needed to make a landing page
+                    aimed at engaging a younger audience. Using HTML, CSS, and JavaScript, I crafted a visually
+                    appealing and dynamic website that captures the attention of the target audience.
                 </p>
+                <a href="">See the Project</a>
             </div>
-
+            <div>
+                <h3>Hacked Hogwarts</h3>
+                <p>Lastly, I developed Hacked Hogwarts, a web application that simulates a cyber attack on Hogwarts
+                    School of Witchcraft and Wizardry. Through basic JavaScript techniques such as filtering and
+                    sorting, I developed a user interface that enables users to interact with the simulated cyber
+                    attack. This project helped me enhance my JavaScript programming skills and gain experience in
+                    creating dynamic web applications.
+                </p>
+                <a href="">See the Project</a>
+            </div>
         </section>
         <!-- Section maybe for downloading my resume?-->
         <section id="resume">
             <h2>Resume</h2>
-            <a target="_blank" href="download/Resume - Henry Navntoft.pdf">Download</a>
+            <a target="_blank" href="download/henry_navntoft_resume.pdf">Download</a>
         </section>
     </main>
     <footer>
@@ -82,7 +95,9 @@
         <a target="_blank" href="https://www.linkedin.com/in/henry-lundberg-navntoft/"><img src="assets/linkedin.svg"
                 alt=""></a>
         <p>&copy; 2023 Henry Navntoft. All rights reserved.</p>
+
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
