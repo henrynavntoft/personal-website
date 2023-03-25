@@ -293,7 +293,6 @@ span {
   margin-top: 1rem;
   padding: 1rem;
   background-color: var(--primary);
-
   box-shadow: var(--card);
   transition: all 0.3s ease;
 }
@@ -373,7 +372,7 @@ footer img {
 
 footer img:hover {
   filter: var(--filter-hover);
-  animation: raise 0.3s ease-in forwards;
+  animation: raise 0.3s ease forwards;
 }
 
 @keyframes raise {
