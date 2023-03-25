@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -15,18 +15,31 @@
 </div>
 
 <body>
+
     <header>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <div class="toggle-container">
-                    <input type="checkbox" id="switch"><label for="switch">Toggle</label>
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="theme-toggle">
+                        <input type="checkbox" id="theme-toggle" />
+                        <div class="slider round"></div>
+                    </label>
                 </div>
             </ul>
+
+            <div class="burger-menu">
+                <div class="burger"></div>
+            </div>
+
+            <div class="dropdown-menu" id="dropdownMenu">
+                <a href="#about" class="dropdown-item">About</a>
+                <a href="#project-container" class="dropdown-item">Projects</a>
+                <a href="#resume" class="dropdown-item">Resume</a>
+            </div>
         </nav>
     </header>
+
+
     <main>
         <section id="about">
             <h1>Henry Lundberg Navntoft</h1>
@@ -38,7 +51,7 @@
                 <p>Born in 2000 in <span>Copenhagen, Denmark.</span>
                     <br>
                     <br>
-                    I am a firm believer that web design should be <span>simple </span>, easy to understand, and
+                    I am a firm believer that web design should be <span>simple</span>, easy to understand, and
                     functional.
                     <br>
                     <br>
@@ -54,34 +67,38 @@
                     Interested in talking / seeing some of my <span>projects?</span> Continue scrolling!</p>
         </section>
         <!-- Section displayed selected projects -->
-        <section id="projects">
+        <section id="project-container">
             <h2>Projects</h2>
-            <div>
-                <h3>Beerwalks Copenahgen</h3>
-                <p>One of my projects was the Beerwalks Copenhagen website. Using semantic HTML and CSS, I created an
-                    engaging and accessible experience for visitors. I also implemented JavaScript to enhance the
-                    website's interactivity and functionality. The design effectively promotes Beerwalks Copenhagen as a
-                    unique experience for beer enthusiasts.
-                </p>
-                <a href="">See the Project</a>
-            </div>
-            <div>
-                <h3>Copenhagen Cartel</h3>
-                <p>Another project I created was a landing page for Copenhagen Cartel. We needed to make a landing page
-                    aimed at engaging a younger audience. Using HTML, CSS, and JavaScript, I crafted a visually
-                    appealing and dynamic website that captures the attention of the target audience.
-                </p>
-                <a href="">See the Project</a>
-            </div>
-            <div>
-                <h3>Hacked Hogwarts</h3>
-                <p>Lastly, I developed Hacked Hogwarts, a web application that simulates a cyber attack on Hogwarts
-                    School of Witchcraft and Wizardry. Through basic JavaScript techniques such as filtering and
-                    sorting, I developed a user interface that enables users to interact with the simulated cyber
-                    attack. This project helped me enhance my JavaScript programming skills and gain experience in
-                    creating dynamic web applications.
-                </p>
-                <a href="">See the Project</a>
+            <div id="projects">
+                <div>
+                    <h3>Beerwalks Copenahgen</h3>
+                    <p>One of my projects was the Beerwalks Copenhagen website. Using semantic HTML and CSS, I created
+                        an
+                        engaging and accessible experience for visitors. I also implemented JavaScript to enhance the
+                        website's interactivity and functionality. The design effectively promotes Beerwalks Copenhagen
+                        as a
+                        unique experience for beer enthusiasts.
+                    </p>
+                </div>
+                <div>
+                    <h3>Copenhagen Cartel</h3>
+                    <p>Another project I created was a landing page for Copenhagen Cartel. We needed to make a landing
+                        page
+                        aimed at engaging a younger audience. Using HTML, CSS, and JavaScript, I crafted a visually
+                        appealing and dynamic website that captures the attention of the target audience.
+                    </p>
+
+                </div>
+                <div>
+                    <h3>Hacked Hogwarts</h3>
+                    <p>Lastly, I developed Hacked Hogwarts, a web application that simulates a cyber attack on Hogwarts
+                        School of Witchcraft and Wizardry. Through basic JavaScript techniques such as filtering and
+                        sorting, I developed a user interface that enables users to interact with the simulated cyber
+                        attack. This project helped me enhance my JavaScript programming skills and gain experience in
+                        creating dynamic web applications.
+                    </p>
+
+                </div>
             </div>
         </section>
         <!-- Section maybe for downloading my resume?-->
