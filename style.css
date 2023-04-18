@@ -89,6 +89,7 @@ header a {
   position: relative;
   width: 30px;
   height: 24px;
+  z-index: 1001;
 }
 
 .burger {
@@ -137,13 +138,17 @@ header a {
 
 .dropdown-menu {
   display: none;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: var(--primary);
   text-align: center;
   z-index: 1000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .dropdown-item {
@@ -155,6 +160,8 @@ header a {
   opacity: 0;
   transform: translateY(-20px);
   animation-fill-mode: forwards;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -174,9 +181,21 @@ header a {
   }
 }
 
+@keyframes dropdown-item-rise {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
 .menu-hidden {
   display: none;
 }
+
 /*THEME*/
 
 .theme-switch-wrapper {
