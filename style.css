@@ -52,7 +52,7 @@ body {
   right: 0;
   bottom: 0;
   position: fixed;
-  z-index: 100;
+  z-index: 20000;
   opacity: 1;
   transition: opacity 0.2s;
 }
