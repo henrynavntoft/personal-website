@@ -36,28 +36,45 @@ document.querySelector(".burger-menu").addEventListener("click", function () {
   let burger = document.querySelector(".burger");
 
   if (dropdownMenu.style.display === "flex") {
-    dropdownMenu.style.display = "none";
+    retreatItems();
+    setTimeout(() => {
+      dropdownMenu.style.display = "none";
+    }, 500);
     burger.classList.remove("burger-open");
   } else {
     dropdownMenu.style.display = "flex";
     burger.classList.add("burger-open");
-    let items = document.querySelectorAll(".dropdown-item");
-    items.forEach(function (item, index) {
-      item.style.animation = "none";
-      item.offsetHeight;
-      item.style.animation = "dropdown-item-fall 0.5s forwards";
-      item.style.animationDelay = index * 0.1 + "s";
-    });
+    fallItems();
   }
+
   let items = document.querySelectorAll(".dropdown-item");
 
   items.forEach(function (item) {
     item.addEventListener("click", function () {
-      dropdownMenu.style.display = "none";
+      retreatItems();
+      setTimeout(() => {
+        dropdownMenu.style.display = "none";
+      }, 500);
       burger.classList.remove("burger-open");
     });
   });
 });
+
+function fallItems() {
+  let items = document.querySelectorAll(".dropdown-item");
+  items.forEach(function (item, index) {
+    item.style.animation = "dropdown-item-fall 0.5s forwards";
+    item.style.animationDelay = index * 0.1 + "s";
+  });
+}
+
+function retreatItems() {
+  let items = document.querySelectorAll(".dropdown-item");
+  items.forEach(function (item, index) {
+    item.style.animation = "dropdown-item-rise 0.5s forwards";
+    item.style.animationDelay = index * 0.1 + "s";
+  });
+}
 
 console.log(`
  _   _ 
@@ -66,6 +83,5 @@ console.log(`
 |  _  |
 | | | |
 |_| |_|
-
 
 `);
