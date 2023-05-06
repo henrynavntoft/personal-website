@@ -1,4 +1,4 @@
-Henry Navntoft's Portfolio
+#Henry Navntoft's Portfolio
 
 Welcome to my professional portfolio! This repository contains the source code for my personal website, showcasing my skills, experience, and projects as a Designer and Developer.
 
